@@ -55,6 +55,8 @@ Figure -02 HALF Subtractor
 Developed by:HARSETHA J
 
 RegisterNumber:212223220032
+
+
 **Half Adder**
 ```
 module half_adder(a,b,sum,carry);
