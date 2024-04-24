@@ -51,43 +51,40 @@ Figure -02 HALF Subtractor
 **Program:**
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-~~~
-*Half_adder*
-module halfadd_top(a,b,sum,carry);
+
+Developed by:HARSETHA J
+
+RegisterNumber:212223220032
+**Half Adder**
+```
+module half_adder(a,b,sum,carry);
 input a,b;
 output sum,carry; 
- assign sum = a^b;
- assign carry = a & b;
+assign sum = a^b;
+assign carry = a & b;
 endmodule
-
-*Half_subtractor*
+```
+**Half Subtractor**
+```
 module halfsub_top(a,b,D,Bo);
 input a,b;
-output D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
+output D,Bo; 
 assign D = a ^ b;
-  assign Bo = ~a & b;
+assign Bo = ~a & b;
 endmodule
+```
+
+**Output RTL Schematic**
+![318254905-27ab12ba-6842-499d-ab5c-c1ff70269afa](https://github.com/Harsetha/HALF_ADDER_SUBTRACTOR/assets/149985878/11888ea7-6a09-4e00-92df-cd3426684b40)
 
 
-Developed by: HARSETHA J
-RegisterNumber: 212223220032
-~~~
-
-*/
+**Half_adder**
+![318254926-5d2ce67a-98ab-45d6-9652-23ccb56bafc9](https://github.com/Harsetha/HALF_ADDER_SUBTRACTOR/assets/149985878/527a33bc-e98a-4687-80f0-bc8467e4337a)
 
 
+**Half_subtractor**
+![318254953-57403ad1-3781-4316-892b-37f3d4a49bd0](https://github.com/Harsetha/HALF_ADDER_SUBTRACTOR/assets/149985878/a56ac4c3-b87b-4da4-914e-19cac3e59433)
 
-**RTL Schematic**
-![318398649-4146d7c9-565b-4389-b8a2-54118b2c261e](https://github.com/Harsetha/HALF_ADDER_SUBTRACTOR/assets/149985878/ef53d1da-eca1-47a0-93a5-f2a51682ff69)
-
-
-**Output/TIMING Waveform**
-HALF ADDER:
-![318398777-8efe7503-fea8-4272-bf8b-0e334e95cdb1](https://github.com/Harsetha/HALF_ADDER_SUBTRACTOR/assets/149985878/f50c1905-bb98-4926-b025-6a7dda65d5f3)
-
-
-HALF SUTRACTOR:
-![318398899-5bd0588f-6b33-4352-bfb0-2e33f3f77f13](https://github.com/Harsetha/HALF_ADDER_SUBTRACTOR/assets/149985878/e104151b-5cf3-448e-91f6-cbee568b2055)
 
 
 **Result:**
